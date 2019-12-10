@@ -39,9 +39,7 @@
             <img class="mySlides" src="img/slideshow4-3.jpg" style="width: 100%;">
             <img class="mySlides" src="img/slideshow4-4.jpg" style="width: 100%;">
 
-            <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-                <h1 class="w3-xxlarge">Le Catering</h1>
-            </div>
+            
         </header>
 
         <!-- Page content -->
@@ -54,17 +52,25 @@
               <h1 class="w3-center">About LaRosa's</h1><br>
               <h5 class="w3-center"></h5>
               <p class="w3-large"><center>LaRosa's is blend between Italian and American cuisines. Established in the 90's LaRosa's has always been a family favorite. With each bite of intense flavor it'll keep you asking for more. Paul LaRosa the owner, is a family friendly man and makes sure his guests are happy and most importantly full.<span class="w3-tag w3-light-grey"></span></center></p>
-              <p class="3-large w3-text-grey w3-hide-medium"</p>
+              <p class="3-large w3-text-grey w3-hide-medium"></p>
             </div>
           </div>
 
           <hr>
-
-          <!-- Menu Section -->
+            
+            <div class="w3-bar w3-black">
+              <button class="w3-bar-item w3-button" onclick="openCity('London')" style = "width: 33.33333%">Menu</button>
+              <button class="w3-bar-item w3-button" onclick="openCity('Paris')" style = "width: 33.33333%">CHANGE SECTION</button>
+              <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')" style = "width: 33.33333%">CHANGE SECTION</button>
+            </div>
+            
+            <div id="menu" class="city">
+              <h2>Our Menu</h2>
+              <!-- Menu Section -->
           <div class="w3-row w3-padding-64" id="menu">
             <div class="w3-col l6 w3-padding-large">
-              <h1 class="w3-center">Our Menu</h1><br>
-              <h4></h4>
+              
+              <h4>Bread Basket</h4>
               <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
 
               <h4>Honey Almond Granola with Fruits</h4>
@@ -80,12 +86,22 @@
               <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
             </div>
 
-            <div class="w3-col l6 w3-padding-large">
-              <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
-            </div>
+            
           </div>
+            </div>
 
-          <hr>
+            <div id="CHANGE SECTION" class="city" style="display:none">
+              <h2></h2>
+              <p></p>
+            </div>
+
+            <div id="CHANGE SECTION" class="city" style="display:none">
+              <h2></h2>
+              <p></p>
+            </div>
+
+          
+
 
           <!-- Contact Section -->
           <div class="w3-container w3-padding-64" id="contact">
@@ -110,6 +126,7 @@
         </footer>
 
         <script src="js/slideshow.js"></script>
+        <script src="js/tabs.js"></script>    
 
         </body>
 
