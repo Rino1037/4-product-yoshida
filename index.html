@@ -13,7 +13,6 @@
                 }
                 h1, h2, h3, h4, h5, h6 {
                     font-family: 'Baskervville', serif;
-                    letter-spacing: 5px;
                 }
             </style>
         </head>
@@ -24,12 +23,12 @@
 
         <!-- Navbar (sit on top) -->
         <div class="w3-top">
-          <div class="w3-bar w3-padding w3-card" style="letter-spacing:4px; background-color: #673c4f">
-            <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
+          <div class="w3-bar w3-padding w3-card column" style="letter-spacing:4px; background-color: #673c4f">
+            <a href="#home" class="w3-bar-item w3-button">LaRosa's</a>
             <!-- Right-sided navbar links. Hide them on small screens -->
-            <div class="w3-right w3-hide-small">
+            <div>
               <a href="#about" class="w3-bar-item w3-button">About</a>
-              <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+              <a href="#menu" class="w3-bar-item w3-button topnav">Menu</a>
               <a href="#contact" class="w3-bar-item w3-button">Contact</a>
             </div>
           </div>
@@ -52,27 +51,27 @@
           <!-- About Section -->
 
 
-            <div class="w3-center" style="padding: 10px">
+            <div class="w3-center" style="padding: 10px" id="about">
               <img class="w3-center" src="img/LaRosa's-logo.png">
               <h5 class="w3-center"></h5>
-              <p class="w3-large"><center>LaRosa's is blend between Italian and American cuisines. Established in the 90's LaRosa's has always been a family favorite. With each bite of intense flavor it'll keep you asking for more. Paul LaRosa the owner, is a family friendly man and makes sure his guests are happy and most importantly full.<span class="w3-tag w3-light-grey"></span></center></p>
+              <p class="w3-large"><center>LaRosa's is blend between Italian and American cuisines. Established in the 90's LaRosa's has always been a family favorite. With each bite of intense flavor it'll keep you asking for more. Paul LaRosa the owner, is a friendly man and makes sure his guests are happy and most importantly full.<span class="w3-tag w3-light-grey"></span></center></p>
               <p class="3-large w3-text-grey w3-hide-medium"></p>
             </div>
           </div>
 
           <hr>
             
-            <div class="w3-bar w3-black">
-              <button class="w3-bar-item w3-button" onclick="openTab('menu')" style = "width: 33.33333%">Menu</button>
-              <button class="w3-bar-item w3-button" onclick="openTab('CHANGE SECTION')" style = "width: 33.33333%">CHANGE SECTION</button>
+            <div class="w3-bar w3-black" id="menu">
+              <button class="w3-bar-item w3-button" onclick="openTab('cafe')" style = "width: 33.33333%">Cafe Menu</button>
+              <button class="w3-bar-item w3-button" onclick="openTab('bar')" style = "width: 33.33333%">Bar Menu</button>
               <button class="w3-bar-item w3-button" onclick="openTab('CHANGE SECTION')" style = "width: 33.33333%">CHANGE SECTION</button>
             </div>
             
-            <div id="menu" class="tab">
+            <div id="menu" class="tab w3-center">
                 <h2>Our Menu</h2>
                 <!-- Menu Section -->
-                <div class="w3-row w3-padding-6" id="menu">
-                    <div class="w3-col l6 w3-padding-large">
+                <div class="w3-row w3-padding-6" id="cafe">
+                    <div class="w3-col-6 w3-padding-large">
               
                         <h4>Bread Basket</h4>
                         <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
@@ -92,7 +91,7 @@
                 </div>
             </div>
 
-            <div id="CHANGE SECTION" class="tab" style="display:none">
+            <div id="bar" class="tab" style="display:none">
               <h2></h2>
               <p></p>
             </div>
