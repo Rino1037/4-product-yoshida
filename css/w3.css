@@ -1429,9 +1429,14 @@ a {
     float: right!important
 }
 
+.w3-button {
+    color: #fff;
+    background-color: #673c4f;
+}
+
 .w3-button:hover {
-    color: #000!important;
-    background-color: #ccc!important
+    color: #fff!important;
+    background-color: #764f60!important
 }
 
 .w3-transparent,
