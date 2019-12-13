@@ -5,20 +5,34 @@
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
+@media only screen and (max-width: 600px) {
+  .topnav {
     width: 100%;
   }
 }
 
-.column {
-    float: left;
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
 }
 
-.left, .right {
-  width: 25%;
+.active, .accordion:hover {
+  background-color: #ccc;
 }
 
-.middle {
-  width: 50%;
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }

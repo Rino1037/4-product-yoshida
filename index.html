@@ -5,6 +5,7 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="css/w3.css" type="text/css">
+            <link rel="stylesheet" href="css/style.css" type="text/css">
             <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
 
             <style>
@@ -62,12 +63,17 @@
           <hr>
             
             <div class="w3-bar w3-black" id="menu">
+              <button class="w3-bar-item w3-button" onclick="openTab('hours')" style = "width: 33.33333%">Hours</button>
               <button class="w3-bar-item w3-button" onclick="openTab('cafe')" style = "width: 33.33333%">Cafe Menu</button>
               <button class="w3-bar-item w3-button" onclick="openTab('bar')" style = "width: 33.33333%">Bar Menu</button>
-              <button class="w3-bar-item w3-button" onclick="openTab('CHANGE SECTION')" style = "width: 33.33333%">CHANGE SECTION</button>
             </div>
             
-            <div id="menu" class="tab w3-center">
+            <div id="hours" class="tab" style="display:none">
+              <h2></h2>
+              <p></p>
+            </div>
+            
+            <div id="cafe" class="tab w3-center">
                 <h2>Our Menu</h2>
                 <!-- Menu Section -->
                 <div class="w3-row w3-padding-6" id="cafe">
@@ -92,14 +98,23 @@
             </div>
 
             <div id="bar" class="tab" style="display:none">
-              <h2></h2>
-              <p></p>
+              <button class="accordion">Section 1</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
             </div>
 
-            <div id="CHANGE SECTION" class="tab" style="display:none">
-              <h2></h2>
-              <p></p>
-            </div>
+            
 
           
 
@@ -127,7 +142,8 @@
         </footer>
 
         <script src="js/slideshow.js"></script>
-        <script src="js/tabs.js"></script>    
+        <script src="js/tabs.js"></script>   
+        <script src="js/bar-accordion.js"></script>
 
         </body>
 
