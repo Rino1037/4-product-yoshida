@@ -22,3 +22,8 @@
 .middle {
   width: 50%;
 }
+
+.menu {
+    float: left;
+    width: 100%;
+}
