@@ -910,6 +910,12 @@ a {
     }
 }
 
+@media screen and (max-width: 600px) {
+  .w3-bar-item {
+    width: 100%;
+  }
+}
+
 .w3-top,
 .w3-bottom {
     position: fixed;
