@@ -234,13 +234,10 @@ h1, h2, h3, h4, h5, h6 {
 
         <!-- Header -->
         <header class="slideshow-container" style="width: 100%; " id="home">
-
             <img class="mySlides" src="img/slideshow4-1.jpg" style="width: 100%;">
             <img class="mySlides" src="img/slideshow4-2.jpg" style="width: 100%;">
             <img class="mySlides" src="img/slideshow4-3.jpg" style="width: 100%;">
             <img class="mySlides" src="img/slideshow4-4.jpg" style="width: 100%;">
-
-            
         </header>
 
         <!-- Page content -->
@@ -260,63 +257,111 @@ h1, h2, h3, h4, h5, h6 {
           <hr>
             
             <div class="w3-bar w3-black" id="menu">
-              <button class="w3-bar-item w3-button" onclick="openTab('hours')" style = "width: 33.33333%">Hours</button>
-              <button class="w3-bar-item w3-button" onclick="openTab('cafe')" style = "width: 33.33333%">Cafe Menu</button>
-              <button class="w3-bar-item w3-button" onclick="openTab('bar')" style = "width: 33.33333%">Bar Menu</button>
-            </div>
-            
-            <div id="hours" class="tab" style="display:none">
-              <h2></h2>
-              <p></p>
-            </div>
-            
-            <div id="cafe" class="tab w3-center">
-                <h2>Our Menu</h2>
-                <!-- Menu Section -->
-                <div class="w3-row w3-padding-6" id="cafe">
-                    <div class="w3-col-6 w3-padding-large">
               
-                        <h4>Bread Basket</h4>
-                        <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+              <button class="w3-bar-item w3-button menu-bar" onclick="openTab('cafe')" style="width: 50%; height: 50px;">Cafe Menu</button>
+              <button class="w3-bar-item w3-button menu-bar" onclick="openTab('bar')" style="width: 50%; height: 50px;">Bar Menu</button>
+            </div>
+            
 
-                        <h4>Honey Almond Granola with Fruits</h4>
-                        <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+            
+            <div id="cafe" class="tab">
+                <button class="accordion">
+                  <h5>Soup</h5>
+              </button>
+                <div class="panel menu-text">
+                    <h4>Minestrone</h4>
+                    <p>5.30</p><br>
+                    <h4>Butternut Squash</h4>
+                    <p>8.65</p><br>
+                    <h4>Soup of the Day</h4>
+                    <p><i> Pricing Varies</i></p><br>
+                </div>
 
-                        <h4>Belgian Waffle</h4>
-                        <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+            <button class="accordion">
+                  <h5>Sandwiches</h5>
+            </button>
+                <div class="panel menu-text">
+                    <h4>Angry Sicilian</h4>
+                    <p>mortadella, capicolla, salami, fresh mozzarella, lettuce, tomato, onion, roasted red peppers, hot cherry peppers, balsamic, evoo, toasted scali 13.00</p><br>
+                    <h4>IL Panino</h4>
+                    <p>prosciutto di parma, fresh mozzarella, tomato, basil, evoo, braided roll 11.00</p><br>
+                    <h4>The Godfather</h4>
+                    <p>prosciutto di parma, chicken cutlet, pesto, fresh mozzarella, roasted red peppers, tomato, evoo, braided roll 14.00</p><br>
+                    <h4>Portobello</h4>
+                    <p>portobello, roasted eggplant, roasted red peppers, goat cheese, arugula, braided roll 10.00</p><br>
+                    <h4>Buffalo Chicken</h4>
+                    <p>chicken cutlet, buffalo sauce, lettuce, tomato, bleu cheese, braided roll 9.00</p><br>
+                    <h4>Chicken Parmigiano</h4>
+                    <p>tomato sauce, provolone, mozzarella, parmesan, toasted braided roll 9.00</p><br>
+                </div>
 
-                        <h4>Scrambled eggs</h4>
-                        <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
 
-                        <h4>Blueberry Pancakes</h4>
-                        <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
-                    </div>
+              <button class="accordion">
+                  <h5>Children</h5>
+              </button>
+                <div class="panel menu-text">
+                    <h4>Pasta Bowl</h4>
+                    <p>tomato sauce or olive oil 5.00</p><br>
+                    <h4>Two Meatballs</h4>
+                    <p>tomato sauce parmesan 5.00</p><br>
+                    <h4>Grilled Cheese</h4>
+                    <p>american, provolone scali</p><br>
+                    <h4>Chicken Cutlet Fingers</h4>
+                    <p>side tomato sauce 5.00</p><br>                    
                 </div>
             </div>
 
             <div id="bar" class="tab" style="display:none">
-              <button class="accordion">Pasta</button>
-                <div class="panel">
+              <button class="accordion">
+                  <h5>Antipasti</h5>
+              </button>
+                <div class="panel menu-text">
+                    <h4>Tuna Poke</h4>
+                    <p>Yellowfin tuna, Seaweed Salad, Peanuts, Sesame Soy Vinaigrette 19.00</p><br>
+                    <h4>Salmon Tartare</h4>
+                    <p>Avocado, Edamame, Pistachio, Jalapeno, Orange Ginger Vinaigrette 17.00</p><br>
+                    <h4>Proscuitto</h4>
+                    <p>Burrata, Pesto, Sicilian Olive Oil 17.00</p><br>
+                    <h4>Crab Cake</h4>
+                    <p>risee, Apple, Toasted Almond, Lemon Watercress Aioli 17.00</p><br>
+                    <h4>Truffle Wings</h4>
+                    <p>Truffle Oil, Pecorino 14.00</p><br>
+                    <h4>Rollatini</h4>
+                    <p>Roasted Eggplant, Ricotta, Spinach, Signature Tomato Sauce 14.00</p><br>
+                </div>
+
+            <button class="accordion">
+                  <h5>Insalati</h5>
+            </button>
+                <div class="panel menu-text">
+                    <h4>Caprese</h4>
+                    <p>Burrata, Beefsteak Tomato, Basil, Balsamic Glaze 13.00</p><br>
+                    <h4>Arugula</h4>
+                    <p>Artichoke Hearts, Fennel, Parmesan, Lemon Dijon Vinaigrette 14.00</p><br>
+                    <h4>Beet</h4>
+                    <p>Arugula, Candied Walnuts, Goat Cheese, Balsamic Glaze 13.00</p><br>
+                    <h4>Caesar</h4>
+                    <p>Rosemary Crouton, Lemon, Romano, Black Pepper 10.00</p><br>
+                </div>
+
+
+              <button class="accordion">
+                  <h5>Pasta</h5>
+              </button>
+                <div class="panel menu-text">
                     <h4>Cavatelli Bolognese</h4>
-                    <p class="w3-text-grey">Lamb  Short Rib Ragu, Parmesan 19.00</p><br>
+                    <p>Lamb  Short Rib Ragu, Parmesan 19.00</p><br>
                     <h4>Rigatoni Bianco</h4>
-                    <p class="w3-text-grey">White Bolognese, Veal, Pork, Beef, Mushroom, Sweet Cream 19.00</p><br>
+                    <p>White Bolognese, Veal, Pork, Beef, Mushroom, Sweet Cream 19.00</p><br>
                     <h4>Lobster Alla Vodka</h4>
-                    <p class="w3-text-grey">Creamy Lobster Sauce, Tagliatelle 34.00</p><br>
+                    <p>Creamy Lobster Sauce, Tagliatelle 34.00</p><br>
                     <h4>Gorgonzola Ravioli</h4>
-                    <p class="w3-text-grey">Wild Mushrooms, Sage, Gorgonzola Cream 20.00</p><br>
+                    <p>Wild Mushrooms, Sage, Gorgonzola Cream 20.00</p><br>
                     <h4>Gnocchi al Forno</h4>
-                    <p class="w3-text-grey">Fresh Mozzarella, Basil, Signature Tomato Sauce</p><br>
-                </div>
-
-                <button class="accordion">Section 2</button>
-                <div class="panel">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-
-                <button class="accordion">Section 3</button>
-                <div class="panel">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Fresh Mozzarella, Basil, Signature Tomato Sauce 18.00</p><br>
+                    <h4>Pappardelle Gamberetto</h4>
+                    <p>Shrimp, Pesto, Pine Nut, Parmesan 21.00</p><br>
+                    
                 </div>
             </div>
 
