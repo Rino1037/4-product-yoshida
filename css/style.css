@@ -1,8 +1,7 @@
-/*93827F 351431 */
 .slideshow-container {
     max-width: 1920px;
     position: relative;
-      margin: auto;
+    margin: auto;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
@@ -53,22 +52,11 @@
     color: #7f7b82
 }
 
-.accordion:after {
-  
-  font-size: px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-
-}
 
 .fas {
-  font-size: 20px;
-  cursor: pointer;
-  user-select: none;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
 }
 
 
