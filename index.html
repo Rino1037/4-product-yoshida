@@ -7,7 +7,10 @@
             <link rel="stylesheet" href="css/w3.css" type="text/css">
             <link rel="stylesheet" href="css/style.css" type="text/css">
             <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
-            <link href="/fontawesome-free-5.12.0-web" rel="stylesheet">
+            <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="shortcut icon" href="img/LaRosa's-favicon.ico" type="image/x-icon" />
+
 
             <style>
                 body {
@@ -21,189 +24,185 @@
         <!-- hi -->
         <body>
 
-        <!--  this is a test comment. -->
-<!--            another test comment-->
+            <!-- this is a test comment -->
+            <!-- another test comment -->
 
-        <!-- Navbar (sit on top) -->
-        <div class="w3-top">
-          
-            <a href="#home" class="w3-bar-item w3-button">LaRosa's</a>
-            <!-- Right-sided navbar links. Hide them on small screens -->
-            
-              <a href="#about" class="w3-bar-item w3-button">About</a>
-              <a href="#menu" class="w3-bar-item w3-button">Menu</a>
-              <a href="#contact" class="w3-bar-item w3-button ">Contact</a>
-        
+            <!-- Navbar (sit on top) -->
+            <div class="w3-top" style="font-size: 18px">
 
-        </div>
+                <a href="#home" class="w3-bar-item w3-button w3-quarter">LaRosa's</a>            
+                <a href="#about" class="w3-bar-item w3-button w3-quarter">About</a>
+                <a href="info" class="w3-bar-item w3-button w3-quarter">Cafe and Bar</a>
+                <a href="#menu" class="w3-bar-item w3-button w3-quarter">Menus</a>
 
-        <!-- Header -->
-        <header class="slideshow-container" style="width: 100%; " id="home">
-            <img class="mySlides" src="img/slideshow4-1.jpg" style="width: 100%;">
-            <img class="mySlides" src="img/slideshow4-2.jpg" style="width: 100%;">
-            <img class="mySlides" src="img/slideshow4-3.jpg" style="width: 100%;">
-            <img class="mySlides" src="img/slideshow4-4.jpg" style="width: 100%;">
-        </header>
-
-        <!-- Page content -->
-        <div class="w3-content" style="max-width: 1920px;">
-
-          <!-- About Section -->
-
-
-            <div class="w3-center" style="padding: 10px" id="about">
-              <img class="w3-center" src="img/LaRosa's-logo.png">
-              <h5 class="w3-center"></h5>
-              <p class="w3-large"><center>LaRosa's is a blend between Italian and American cuisines, with various blends of plates from our cafe menu to our bar menu. Established in the 90's LaRosa's has always been a family favorite and continues to be even till this day. With each bite of intense flavor it'll keep you asking for more, everyone loves Larosas from babies to the elderly. We aspire to make our customers satisfied no matter what. Paul LaRosa the owner, is a friendly man and makes sure his guests are happy and most importantly full.
-
-
-<span class="w3-tag w3-light-grey"></span></center></p>
-              <p class="3-large w3-text-grey w3-hide-medium"></p>
             </div>
-          </div>
 
-          <hr>
+            <!-- Header -->
+            <header class="slideshow-container" style="width: 100%; " id="home">
+                <img class="mySlides" src="img/slideshow4-1.jpg" style="width: 100%;">
+                <img class="mySlides" src="img/slideshow4-2.jpg" style="width: 100%;">
+                <img class="mySlides" src="img/slideshow4-3.jpg" style="width: 100%;">
+                <img class="mySlides" src="img/slideshow4-4.jpg" style="width: 100%;">
+            </header>
+
+            <!-- Page content -->
+            <div class="w3-content" style="max-width: 1920px;">
+                <!-- About Section -->
+                <div class="w3-center" style="padding: 10px" id="about">
+                  <img class="w3-center" src="img/LaRosa's-logo.png">
+                  <h5 class="w3-center"></h5>
+                  <p class="w3-large"><center>LaRosa's is a blend between Italian and American cuisines, with various blends of plates from our cafe menu to our bar menu. Established in the 90's LaRosa's has always been a family favorite and continues to be even till this day. With each bite of intense flavor it'll keep you asking for more, everyone loves LaRosas from babies to the elderly. We aspire to make our customers satisfied no matter what. Paul LaRosa, the owner, is a friendly man and makes sure his guests are happy and most importantly full.</center></p>
+                </div>
+            </div>
+
+              <hr>
+
+            <div class="w3-content w3-center" >
+                <div class="w3-half w3-center" id="info">
+                    <h3>Cafe LaRosa's</h3>
+                    <p>With quick service, and fresh homemade specialties, it's perfect for lunch, dinner or takeaway! </p>
+                </div>
+                <div class="w3-half w3-center">
+                    <h3>Bar LaRosa's</h3>
+                    <p>The Bar is a full service restaurant, offering wines, beers, and cocktails!</p>
+                </div>
+                <button class="w3-button" id="myBtn">Hours</button>
+                <div id="myModal" class="modal">
+
+                  <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Cafe LaRosa Hours<br>Monday thru Friday : 10:00AM - 8:00PM<br>Saturday  : 10:00 AM 6:00PM<br>Sunday  :  CLOSED</p>
+                    <p>Bar LaRosa Hours <br>Monday thru Saturday : 4:00PM - 10:00PM</p></div>
+                </div>
+
+
+            </div>
             
-            
-            <div class="w3-bar">
+            <hr>
+
+            <div class="w3-bar" id="menu">
                 <button class="w3-bar-item w3-button menu-bar" onclick="openTab('cafe')" style="width: 50%; height: 50px;">Cafe Menu</button>
                 <button class="w3-bar-item w3-button menu-bar" onclick="openTab('bar')" style="width: 50%; height: 50px;">Bar Menu</button>
             </div>
-            
 
-            
-            <div id="cafe" class="tab">
-                <button class="accordion">
-                    <h5>Soup</h5>
-                    <i class="fas fa-plus"></i>
-              </button>
-                <div class="panel menu-text">
-                    <h4>Minestrone</h4>
-                    <p>5.30</p><br>
-                    <h4>Butternut Squash</h4>
-                    <p>8.65</p><br>
-                    <h4>Soup of the Day</h4>
-                    <p><i> Pricing Varies</i></p><br>
+
+
+                <div id="cafe" class="tab">
+                    <img class="menu-img" src="img/Menu-1.jpg">
+                    <button class="accordion" onclick="switchPlusMinus(this)" >
+                        <h5>Soup <i id="icon-1" class="fas fa-plus" style="float: right"></i></h5>
+                  </button>
+                    <div class="panel menu-text">
+                        <h4>Minestrone</h4>
+                        <p>5.30</p><br>
+                        <h4>Butternut Squash</h4>
+                        <p>8.65</p><br>
+                        <h4>Soup of the Day</h4>
+                        <p><i> Pricing Varies</i></p><br>
+                    </div>
+                <img class="menu-img" src="img/Menu-2.jpg">
+                <button class="accordion" onclick="switchPlusMinus2(this)">
+                      <h5>Sandwiches <i id="icon-2" class="fas fa-plus" style="float: right"></i></h5>
+                </button>
+                    <div class="panel menu-text">
+                        <h4>Angry Sicilian</h4>
+                        <p>mortadella, capicolla, salami, fresh mozzarella, lettuce, tomato, onion, roasted red peppers, hot cherry peppers, balsamic, evoo, toasted scali 13.00</p><br>
+                        <h4>IL Panino</h4>
+                        <p>prosciutto di parma, fresh mozzarella, tomato, basil, evoo, braided roll 11.00</p><br>
+                        <h4>The Godfather</h4>
+                        <p>prosciutto di parma, chicken cutlet, pesto, fresh mozzarella, roasted red peppers, tomato, evoo, braided roll 14.00</p><br>
+                        <h4>Portobello</h4>
+                        <p>portobello, roasted eggplant, roasted red peppers, goat cheese, arugula, braided roll 10.00</p><br>
+                        <h4>Buffalo Chicken</h4>
+                        <p>chicken cutlet, buffalo sauce, lettuce, tomato, bleu cheese, braided roll 9.00</p><br>
+                        <h4>Chicken Parmigiano</h4>
+                        <p>tomato sauce, provolone, mozzarella, parmesan, toasted braided roll 9.00</p><br>
+                    </div>
+
+                <img class="menu-img" src="img/Menu-4.jpg">
+                <button class="accordion" onclick="switchPlusMinus3(this)">
+                    <h5>Children <i id="icon-3" class="fas fa-plus" style="float: right"></i></h5>
+                </button>
+                    <div class="panel menu-text">
+                        <h4>Pasta Bowl</h4>
+                        <p>tomato sauce or olive oil 5.00</p><br>
+                        <h4>Two Meatballs</h4>
+                        <p>tomato sauce parmesan 5.00</p><br>
+                        <h4>Grilled Cheese</h4>
+                        <p>american, provolone scali 5.00</p><br>
+                        <h4>Chicken Cutlet Fingers</h4>
+                        <p>side tomato sauce 5.00</p><br>                    
+                    </div>
                 </div>
 
-            <button class="accordion">
-                  <h5>Sandwiches</h5>
-            </button>
-                <div class="panel menu-text">
-                    <h4>Angry Sicilian</h4>
-                    <p>mortadella, capicolla, salami, fresh mozzarella, lettuce, tomato, onion, roasted red peppers, hot cherry peppers, balsamic, evoo, toasted scali 13.00</p><br>
-                    <h4>IL Panino</h4>
-                    <p>prosciutto di parma, fresh mozzarella, tomato, basil, evoo, braided roll 11.00</p><br>
-                    <h4>The Godfather</h4>
-                    <p>prosciutto di parma, chicken cutlet, pesto, fresh mozzarella, roasted red peppers, tomato, evoo, braided roll 14.00</p><br>
-                    <h4>Portobello</h4>
-                    <p>portobello, roasted eggplant, roasted red peppers, goat cheese, arugula, braided roll 10.00</p><br>
-                    <h4>Buffalo Chicken</h4>
-                    <p>chicken cutlet, buffalo sauce, lettuce, tomato, bleu cheese, braided roll 9.00</p><br>
-                    <h4>Chicken Parmigiano</h4>
-                    <p>tomato sauce, provolone, mozzarella, parmesan, toasted braided roll 9.00</p><br>
+                <div id="bar" class="tab" style="display:none">
+                  <button class="accordion" onclick="switchPlusMinus4(this)">
+                      <h5>Antipasti <i id="icon-4" class="fas fa-plus" style="float: right"></i></h5>
+                  </button>
+                    <div class="panel menu-text">
+                        <h4>Tuna Poke</h4>
+                        <p>yellowfin tuna, seaweed salad, peanuts, sesame soy vinaigrette 19.00</p><br>
+                        <h4>Salmon Tartare</h4>
+                        <p>avocado, edamame, pistachio, jalapeno, orange ginger vinaigrette 17.00</p><br>
+                        <h4>Proscuitto</h4>
+                        <p>burrata, pesto, sicilian olive oil 17.00</p><br>
+                        <h4>Crab Cake</h4>
+                        <p>frisee, apple, toasted almond, lemon watercress aioli 17.00</p><br>
+                        <h4>Truffle Wings</h4>
+                        <p>truffle oil, pecorino 14.00</p><br>
+                        <h4>Rollatini</h4>
+                        <p>roasted eggplant, ricotta, spinach, signature tomato sauce 14.00</p><br>
+                    </div>
+
+                <button class="accordion" onclick="switchPlusMinus5(this)">
+                      <h5>Insalati <i id="icon-5" class="fas fa-plus" style="float: right"></i></h5>
+                </button>
+                    <div class="panel menu-text">
+                        <h4>Caprese</h4>
+                        <p>burrata, beefsteak tomato, basil, balsamic glaze 13.00</p><br>
+                        <h4>Arugula</h4>
+                        <p>artichoke hearts, fennel, parmesan, lemon dijon vinaigrette 14.00</p><br>
+                        <h4>Beet</h4>
+                        <p>arugula, candied walnuts, goat cheese, balsamic glaze 13.00</p><br>
+                        <h4>Caesar</h4>
+                        <p>rosemary crouton, lemon, romano, black pepper 10.00</p><br>
+                    </div>
+
+                <img class="menu-img" src="img/Menu-3.jpg">
+                  <button class="accordion" onclick="switchPlusMinus6(this)">
+                      <h5>Pasta <i id="icon-6" class="fas fa-plus" style="float: right"></i></h5>
+                  </button>
+                    <div class="panel menu-text">
+                        <h4>Cavatelli Bolognese</h4>
+                        <p>lamb short rib ragu, parmesan 19.00</p><br>
+                        <h4>Rigatoni Bianco</h4>
+                        <p>white bolognese, veal, pork, beef, mushroom, sweet cream 19.00</p><br>
+                        <h4>Lobster Alla Vodka</h4>
+                        <p>creamy lobster sauce, tagliatelle 34.00</p><br>
+                        <h4>Gorgonzola Ravioli</h4>
+                        <p>wild mushrooms, sage, gorgonzola cream 20.00</p><br>
+                        <h4>Gnocchi al Forno</h4>
+                        <p>fresh mozzarella, basil, signature tomato sauce 18.00</p><br>
+                        <h4>Pappardelle Gamberetto</h4>
+                        <p>shrimp, pesto, pine nut, parmesan 21.00</p><br>
+
+                    </div>
                 </div>
 
 
-              <button class="accordion">
-                  <h5>Children</h5>
-              </button>
-                <div class="panel menu-text">
-                    <h4>Pasta Bowl</h4>
-                    <p>tomato sauce or olive oil 5.00</p><br>
-                    <h4>Two Meatballs</h4>
-                    <p>tomato sauce parmesan 5.00</p><br>
-                    <h4>Grilled Cheese</h4>
-                    <p>american, provolone scali</p><br>
-                    <h4>Chicken Cutlet Fingers</h4>
-                    <p>side tomato sauce 5.00</p><br>                    
-                </div>
-            </div>
+            <!-- End page content -->
 
-            <div id="bar" class="tab" style="display:none">
-              <button class="accordion">
-                  <h5>Antipasti</h5>
-              </button>
-                <div class="panel menu-text">
-                    <h4>Tuna Poke</h4>
-                    <p>Yellowfin tuna, Seaweed Salad, Peanuts, Sesame Soy Vinaigrette 19.00</p><br>
-                    <h4>Salmon Tartare</h4>
-                    <p>Avocado, Edamame, Pistachio, Jalapeno, Orange Ginger Vinaigrette 17.00</p><br>
-                    <h4>Proscuitto</h4>
-                    <p>Burrata, Pesto, Sicilian Olive Oil 17.00</p><br>
-                    <h4>Crab Cake</h4>
-                    <p>risee, Apple, Toasted Almond, Lemon Watercress Aioli 17.00</p><br>
-                    <h4>Truffle Wings</h4>
-                    <p>Truffle Oil, Pecorino 14.00</p><br>
-                    <h4>Rollatini</h4>
-                    <p>Roasted Eggplant, Ricotta, Spinach, Signature Tomato Sauce 14.00</p><br>
-                </div>
+            <!-- Footer -->
+            <footer class="w3-center w3-light-grey w3-padding-32">
+              <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+            </footer>
 
-            <button class="accordion">
-                  <h5>Insalati</h5>
-            </button>
-                <div class="panel menu-text">
-                    <h4>Caprese</h4>
-                    <p>Burrata, Beefsteak Tomato, Basil, Balsamic Glaze 13.00</p><br>
-                    <h4>Arugula</h4>
-                    <p>Artichoke Hearts, Fennel, Parmesan, Lemon Dijon Vinaigrette 14.00</p><br>
-                    <h4>Beet</h4>
-                    <p>Arugula, Candied Walnuts, Goat Cheese, Balsamic Glaze 13.00</p><br>
-                    <h4>Caesar</h4>
-                    <p>Rosemary Crouton, Lemon, Romano, Black Pepper 10.00</p><br>
-                </div>
-
-
-              <button class="accordion">
-                  <h5>Pasta</h5>
-              </button>
-                <div class="panel menu-text">
-                    <h4>Cavatelli Bolognese</h4>
-                    <p>Lamb  Short Rib Ragu, Parmesan 19.00</p><br>
-                    <h4>Rigatoni Bianco</h4>
-                    <p>White Bolognese, Veal, Pork, Beef, Mushroom, Sweet Cream 19.00</p><br>
-                    <h4>Lobster Alla Vodka</h4>
-                    <p>Creamy Lobster Sauce, Tagliatelle 34.00</p><br>
-                    <h4>Gorgonzola Ravioli</h4>
-                    <p>Wild Mushrooms, Sage, Gorgonzola Cream 20.00</p><br>
-                    <h4>Gnocchi al Forno</h4>
-                    <p>Fresh Mozzarella, Basil, Signature Tomato Sauce 18.00</p><br>
-                    <h4>Pappardelle Gamberetto</h4>
-                    <p>Shrimp, Pesto, Pine Nut, Parmesan 21.00</p><br>
-                    
-                </div>
-            </div>
-
-            
-
-          
-
-
-          <!-- Contact Section -->
-          <div class="w3-container w3-padding-64" id="contact">
-            <h1>Contact</h1><br>
-            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
-            <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
-            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
-            <form action="/action_page.php" target="_blank">
-              <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-              <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
-              <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-              <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-              <p><button class="w3-button w3-section" type="submit">SEND MESSAGE</button></p>
-            </form>
-          </div>
-
-        <!-- End page content -->
-
-        <!-- Footer -->
-        <footer class="w3-center w3-light-grey w3-padding-32">
-          <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-        </footer>
-
-        <script src="js/slideshow.js"></script>
-        <script src="js/tabs.js"></script>   
-        <script src="js/bar-accordion.js"></script>
+            <script src="js/slideshow.js"></script>
+            <script src="js/tabs.js"></script>   
+            <script src="js/bar-accordion.js"></script>
+            <script src="js/plus-minus.js"></script>
+            <script src="js/modal.js"></script>
 
         </body>
 
