@@ -4,11 +4,20 @@
             <title>LaRosa's</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <!-- link to w3.css -->
             <link rel="stylesheet" href="css/w3.css" type="text/css">
+            
+            <!--link to style.css-->
             <link rel="stylesheet" href="css/style.css" type="text/css">
+            
+            <!-- Google fonts -->
             <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+            
+            <!-- link to fontawesome -->
             <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+            <!-- favicon -->
             <link rel="shortcut icon" href="img/LaRosa's-favicon-transparent.ico" type="image/x-icon" />
 
 
@@ -21,20 +30,14 @@
                 }
             </style>
         </head>
-        <!-- hi -->
+        
         <body>
-
-            <!-- this is a test comment -->
-            <!-- another test comment -->
-
             <!-- Navbar (sit on top) -->
             <div class="w3-top" style="font-size: 18px">
-
                 <a href="#home" class="w3-bar-item w3-button w3-quarter">LaRosa's</a>            
                 <a href="#about" class="w3-bar-item w3-button w3-quarter">About</a>
                 <a href="#info" class="w3-bar-item w3-button w3-quarter">Cafe and Bar</a>
                 <a href="#menu" class="w3-bar-item w3-button w3-quarter">Menus</a>
-
             </div>
 
             <!-- Header -->
@@ -55,8 +58,9 @@
                 </div>
             </div>
 
-              <hr id="info">
-
+            <hr id="info">
+            
+            <!-- cafe and bar info and hours -->
             <div class="w3-content w3-center info-text" >
                 <div class="w3-half w3-center ">
                     <h3>Cafe LaRosa's</h3>
@@ -68,44 +72,41 @@
                 </div>
                 <button class="w3-button" id="myBtn">Hours</button>
                 <div id="myModal" class="modal">
-
-                  <!-- Modal content -->
-                <div class="modal-content">
+                    <!-- Modal content -->
+                    <div class="modal-content">
                     <span class="close">&times;</span>
                     <p style="color: #172121"><b>Cafe LaRosa Hours</b><br>Monday thru Friday : 10:00AM - 8:00PM<br>Saturday  : 10:00 AM 6:00PM<br>Sunday  :  CLOSED</p>
                     <p style="color: #172121"><b>Bar LaRosa Hours</b> <br>Monday thru Saturday : 4:00PM - 10:00PM</p></div>
                 </div>
-
-
             </div>
             
             <hr>
-
+            
+            <!-- cafe and bar menu -->
             <div class="w3-bar" id="menu">
                 <button class="w3-bar-item w3-button menu-bar" onclick="openTab('cafe')" style="width: 50%; height: 50px;">Cafe Menu</button>
                 <button class="w3-bar-item w3-button menu-bar" onclick="openTab('bar')" style="width: 50%; height: 50px;">Bar Menu</button>
             </div>
 
-
-
-                <div id="cafe" class="tab">
-                    <img class="menu-img" src="img/Menu-1.jpg">
-                    <button class="accordion" onclick="switchPlusMinus(this)" >
-                        <h5>Soup <i id="icon-1" class="fas fa-plus" style="float: right"></i></h5>
-                  </button>
-                    <div class="panel menu-text">
-                        <h4>Minestrone</h4>
-                        <p>5.30</p><br>
-                        <h4>Butternut Squash</h4>
-                        <p>8.65</p><br>
-                        <h4>Soup of the Day</h4>
-                        <p><i> Pricing Varies</i></p><br>
-                    </div>
+            <div id="cafe" class="tab">
+                <img class="menu-img" src="img/Menu-1.jpg">
+                <button class="accordion" onclick="switchPlusMinus(this)" >
+                    <h5>Soup <i id="icon-1" class="fas fa-plus" style="float: right"></i></h5>
+                </button>
+                <div class="panel menu-text">
+                    <h4>Minestrone</h4>
+                    <p>5.30</p><br>
+                    <h4>Butternut Squash</h4>
+                    <p>8.65</p><br>
+                    <h4>Soup of the Day</h4>
+                    <p><i> Pricing Varies</i></p><br>
+                </div>
+                
                 <img class="menu-img" src="img/Menu-2.jpg">
                 <button class="accordion" onclick="switchPlusMinus2(this)">
                       <h5>Sandwiches <i id="icon-2" class="fas fa-plus" style="float: right"></i></h5>
                 </button>
-                    <div class="panel menu-text">
+                <div class="panel menu-text">
                         <h4>Angry Sicilian</h4>
                         <p>mortadella, capicolla, salami, fresh mozzarella, lettuce, tomato, onion, roasted red peppers, hot cherry peppers, balsamic, evoo, toasted scali 13.00</p><br>
                         <h4>IL Panino</h4>
@@ -119,12 +120,12 @@
                         <h4>Chicken Parmigiano</h4>
                         <p>tomato sauce, provolone, mozzarella, parmesan, toasted braided roll 9.00</p><br>
                     </div>
-
+                
                 <img class="menu-img" src="img/Menu-4.jpg">
                 <button class="accordion" onclick="switchPlusMinus3(this)">
                     <h5>Children <i id="icon-3" class="fas fa-plus" style="float: right"></i></h5>
                 </button>
-                    <div class="panel menu-text">
+                <div class="panel menu-text">
                         <h4>Pasta Bowl</h4>
                         <p>tomato sauce or olive oil 5.00</p><br>
                         <h4>Two Meatballs</h4>
@@ -134,13 +135,13 @@
                         <h4>Chicken Cutlet Fingers</h4>
                         <p>side tomato sauce 5.00</p><br>                    
                     </div>
-                </div>
+            </div>
 
-                <div id="bar" class="tab" style="display:none">
-                  <button class="accordion" onclick="switchPlusMinus4(this)">
+            <div id="bar" class="tab" style="display:none">
+                <button class="accordion" onclick="switchPlusMinus4(this)">
                       <h5>Antipasti <i id="icon-4" class="fas fa-plus" style="float: right"></i></h5>
                   </button>
-                    <div class="panel menu-text">
+                <div class="panel menu-text">
                         <h4>Tuna Poke</h4>
                         <p>yellowfin tuna, seaweed salad, peanuts, sesame soy vinaigrette 19.00</p><br>
                         <h4>Salmon Tartare</h4>
@@ -158,7 +159,7 @@
                 <button class="accordion" onclick="switchPlusMinus5(this)">
                       <h5>Insalati <i id="icon-5" class="fas fa-plus" style="float: right"></i></h5>
                 </button>
-                    <div class="panel menu-text">
+                <div class="panel menu-text">
                         <h4>Caprese</h4>
                         <p>burrata, beefsteak tomato, basil, balsamic glaze 13.00</p><br>
                         <h4>Arugula</h4>
@@ -170,10 +171,10 @@
                     </div>
 
                 <img class="menu-img" src="img/Menu-3.jpg">
-                  <button class="accordion" onclick="switchPlusMinus6(this)">
+                <button class="accordion" onclick="switchPlusMinus6(this)">
                       <h5>Pasta <i id="icon-6" class="fas fa-plus" style="float: right"></i></h5>
                   </button>
-                    <div class="panel menu-text">
+                <div class="panel menu-text">
                         <h4>Cavatelli Bolognese</h4>
                         <p>lamb short rib ragu, parmesan 19.00</p><br>
                         <h4>Rigatoni Bianco</h4>
@@ -188,16 +189,15 @@
                         <p>shrimp, pesto, pine nut, parmesan 21.00</p><br>
 
                     </div>
-                </div>
+            </div>
 
-
-            <!-- End page content -->
-
+            
             <!-- Footer -->
             <footer class="w3-center w3-light-grey w3-padding-32">
-              <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
             </footer>
 
+            <!-- link to all js -->
             <script src="js/slideshow.js"></script>
             <script src="js/tabs.js"></script>   
             <script src="js/bar-accordion.js"></script>
